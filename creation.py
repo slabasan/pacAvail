@@ -9,9 +9,16 @@
 
 def createHTML(): 
 
+  #TODO: (1) parse file and save course info for a given ROOM to a dictionary or *other* solution (use cleanedClasses.txt)
+  #   	 (2) calculate* duration of the class given the time string units of 5 minutes therefore 12 units = 1 hour
+  #      (3) suggest to use a *programming* class to interface with (i,j) in a dictionary in line 49
+  #      (3+) i=0 refers to time of day with 0=8am 1=8:05am ...     and j=day of week -> j=1 MONDAY j=2 TUESDAY ...
+  
   time =480
   col_rowspan = [0,0,0,0,0,0]
-  dic = {(0,1):0, (0,3):0, (0,5):0}
+  dic = {(0,1):0, (0,3):0, (0,5):0}   								#(X,X)=KEY   :# = the value 
+																	#ie) (0,1):0 -> (0,1) is the key *think* apples and 0 is the
+																	#index in className, classTime etc to look for that course's info
   className = ["Circuits"]
   classTime = ["8am to 9:50am"]
   classProf = ["Dr. Ross"]
