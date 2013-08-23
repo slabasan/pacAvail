@@ -1,0 +1,33 @@
+SR	80458	ECPE	041	01	1	3.000	Circuits	MWF	11:00 am-11:55 am	30	13	17	0	0	0	0	0	0	Andrew Jeffrey Tadao Nonaka (P)	08/26-12/13	CHMBRS 115	 
+SR	80459	ECPE	041L	01	1	1.000	Circuits Laboratory	R	03:00 pm-05:50 pm	26	13	13	0	0	0	0	0	0	Rahim Khoie (P)	08/26-12/13	BAUNHA 211	 
+SR	80460	ECPE	071	01	1	3.000	Digital Design	MWF	09:30 am-10:25 am	35	30	5	0	0	0	0	0	0	Anahita Zarei (P)	08/26-12/13	ANDERH 216	 
+SR	81776	ECPE	071	02	1	3.000	Digital Design	MWF	12:30 pm-01:25 pm	35	28	7	0	0	0	0	0	0	Anahita Zarei (P)	08/26-12/13	ANDERH 216	 
+SR	80461	ECPE	071L	01	1	1.000	Digital Design Lab	W	02:00 pm-04:50 pm	24	19	5	0	0	0	0	0	0	Anahita Zarei (P)	08/26-12/13	ANDERH 105	 
+SR	81777	ECPE	071L	02	1	1.000	Digital Design Lab	T	02:00 pm-04:50 pm	30	24	6	0	0	0	0	0	0	Anahita Zarei (P)	08/26-12/13	CHMBRS 115	 
+SR	80328	ECPE	121	01	1	4.000	Systems Analysis	MWF	08:00 am-09:15 am	25	14	11	0	0	0	0	0	0	Cherian P Mathews (P)	08/26-12/13	CHMBRS 115	 
+SR	82261	ECPE	126	01	1	4.000	Digital Signal Processing	TR	10:00 am-11:45 am	25	9	16	0	0	0	0	0	0	Cherian P Mathews (P)	08/26-12/13	BAUNHA 211	 
+SR	80367	ECPE	131	01	1	3.000	Electronics	MWF	12:30 pm-01:25 pm	25	17	8	0	0	0	0	0	0	Jennifer T Ross (P)	08/26-12/13	CHMBRS 115	 
+SR	80368	ECPE	131L	01	1	1.000	Electronics Laboratory	W	03:30 pm-06:20 pm	25	17	8	0	0	0	0	0	0	Jennifer T Ross (P)	08/26-12/13	BAUNHA 211	 
+SR	82589	ECPE	151	01	1	3.000	Artificial Intelligence	MWF	12:30 pm-01:20 pm	30	0	30	0	0	0	30	28	2	Emma J. Bowring (P)	08/26-12/13	CHMBRS 114	 
+SR	82262	ECPE	163	01	1	4.000	Energy Conversion	TR	08:00 am-09:20 am	16	7	9	0	0	0	0	0	0	Rahim Khoie (P)	08/26-12/13	ANDERH 105	 
+SR	82263	ECPE	163	L01	1	0.000	Energy Conversion, Lab 1	M	03:30 pm-06:20 pm	16	7	9	0	0	0	0	0	0	Rahim Khoie (P)	08/26-12/13	BAUNHA 111	 
+C	80919	ECPE	170	01	1	4.000	Computer Systems & Networks	TR	08:00 am-09:45 am	0	26	-26	0	0	0	0	0	0	Kenneth F Hughes (P)	08/26-12/13	CHMBRS 115	 
+C	80467	ECPE	172	01	1	4.000	Microcontrollers	MWF	09:30 am-10:25 am	0	28	-28	0	0	0	0	0	0	Kenneth F Hughes (P)	08/26-12/13	CHMBRS 115	 
+C	80468	ECPE	172	L01	1	0.000	Microcontrollers, Lab 1	M	03:00 pm-05:50 pm	28	28	0	0	0	0	0	0	0	Kenneth F Hughes (P)	08/26-12/13	CHMBRS 115	 
+SR	80469	ECPE	174	01	1	4.000	Advanced Digital Design	MWF	02:00 pm-02:50 pm	20	18	2	0	0	0	0	0	0	Elizabeth Ann Basha (P)	08/26-12/13	CHMBRS 115	 
+SR	80470	ECPE	174	L01	1	0.000	Advanced Digital Design, Lab 1	R	02:00 pm-04:50 pm	20	18	2	0	0	0	0	0	0	Elizabeth Ann Basha (P)	08/26-12/13	CHMBRS 115	 
+SR	80453	ECPE	177	01	1	4.000	Computer Networking	TR	10:00 am-11:45 am	20	3	17	0	0	0	35	12	23	Jeffrey A. Shafer (P)	08/26-12/13	CHMBRS 115	 
+SR	80498	ECPE	177	L01	1	0.000	Computer Networking, Lab 1	T	02:00 pm-04:50 pm	20	3	17	0	0	0	35	12	23	Jeffrey A. Shafer (P)	08/26-12/13	BAUNHA 214	 
+NR	80782	ECPE	191	01	1	1.000-4.000	Independent Study	 	TBA	1	0	1	0	0	0	0	0	0	Jennifer T Ross (P)	08/26-12/13	TBA	 
+SR	82264	ECPE	193A	01	1	3.000	Supercomputing Applications	 	TBA	15	8	7	0	0	0	0	0	0	Jeffrey A. Shafer (P)	08/26-12/13	TBA	 
+SR	81421	ECPE	194	01	1	0.000	Core Assessment Exam (CAE)	T	05:00 pm-06:30 pm	35	30	5	0	0	0	0	0	0	Jennifer T Ross (P)	08/26-12/13	CHMBRS 115	 
+SR	80329	ECPE	195	01	1	2.000	Senior Project I	T	03:00 pm-04:50 pm	20	12	8	0	0	0	0	0	0	Elizabeth Ann Basha (P)	08/26-12/13	CSB 113	 
+SR	80330	ECPE	196	01	1	2.000	Senior Project II	T	12:00 pm-01:50 pm	20	5	15	0	0	0	0	0	0	Elizabeth Ann Basha (P)	08/26-12/13	CSB 113	 
+NR	80783	ECPE	197	01	1	1.000-4.000	Undergraduate Research	 	TBA	1	0	1	0	0	0	0	0	0	Cherian P Mathews (P)	08/26-12/13	TBA	 
+SR	82265	ECPE	263	01	1	3.000	Topics in Renewable Energy	MWF	09:30 am-10:20 am	16	6	10	0	0	0	0	0	0	Rahim Khoie (P)	08/26-12/13	ANDERH 105	 
+SR	81432	ECPE	299	01	1	1.000-6.000	Thesis	 	TBA	10	0	10	0	0	0	0	0	0	Rahim Khoie (P)	08/26-12/13	TBA	 
+SR	81433	ECPE	299	02	1	1.000-6.000	Thesis	 	TBA	5	1	4	0	0	0	0	0	0	Elizabeth Ann Basha (P)	08/26-12/13	TBA	 
+SR	81458	ECPE	299	03	1	1.000-6.000	Thesis	 	TBA	10	1	9	0	0	0	0	0	0	Anahita Zarei (P)	08/26-12/13	TBA	 
+SR	81459	ECPE	299	04	1	1.000-6.000	Thesis	 	TBA	10	0	10	0	0	0	0	0	0	Louise Stark (P)	08/26-12/13	TBA	 
+SR	81460	ECPE	299	05	1	1.000-6.000	Thesis	 	TBA	10	0	10	0	0	0	0	0	0	Jiancheng Liu (P)	08/26-12/13	TBA	 
+SR	81844	ECPE	299	06	1	1.000-6.000	Thesis	 	TBA	10	0	10	0	0	0	0	0	0	Jeffrey A. Shafer (P)	08/26-12/13	TBA	 
