@@ -1,5 +1,7 @@
 #this file is used to generate the HTML/PHP necessary to complete the task
 
+import os
+
 indexFileCode="<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd\">"+"\n"
 indexFileCode+="<html>"+"\n"+"<head><link rel=\"stylesheet\" type=\"text/css\" href=\"indexstyle.css\"></head>""<body>"+"\n"+"<table>"+"\n"+"<tr>"+"\n"
 
@@ -9,9 +11,16 @@ roomFileCode="<td>"+"<ul>"
 
 #creates the index page or Table of Contents with the links to all the other pages created with HTML tables in them
 def createIndexPage():
+  
   global indexFileCode
   global profFileCode
   global roomFileCode
+  
+  if "htmlfiles" not in os.listdir("."):
+    os.mkdir("htmlfiles")
+
+  os.chdir("htmlfiles")
+  
   f = open("index.html",'w')
   profFileCode+="\n"+"</ul>"
   roomFileCode+="\n"+"</ul>"
@@ -42,10 +51,8 @@ def createHTML(dict,PR,queryID):
   #      (3) suggest to use a *programming* class to interface with (i,j) in a dictionary in line 49
   #      (3+) i=0 refers to time of day with 0=8am 1=8:05am ...     and j=day of week -> j=1 MONDAY j=2 TUESDAY ...
   
-  import os
-  
   # time =480
-  col_rowspan = [0,0,0,0,0,0]
+  col_rowspan = [0,0,0,0,0,0,0]
   # dic = {(0,1):0, (0,3):0, (0,5):0}   								#(X,X)=KEY   :# = the value 
 																	#ie) (0,1):0 -> (0,1) is the key *think* apples and 0 is the
 																	#index in className, classTime etc to look for that course's info
@@ -68,14 +75,14 @@ def createHTML(dict,PR,queryID):
   fw.write("<html>")
   fw.write("<head> <link rel=\"stylesheet\" href=\"tableStyle.css\"> </head>")
   fw.write("<body>")
-  fw.write("<table width=\"80%\">")
+  fw.write("<table width=\"90%\">")
   fw.write("\n")
-  fw.write("<tr><th>&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Monday&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Tuesday&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Wednesday&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Thursday&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Friday&nbsp;&nbsp;&nbsp;</th></tr>")
+  fw.write("<tr><th>&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Monday&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Tuesday&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Wednesday&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Thursday&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Friday&nbsp;&nbsp;&nbsp;</th><th class=\"ghost\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th></tr>")
 
   for i in range(168):  											
     fw.write("<tr>")
     fw.write("\n")
-    for j in range(6):
+    for j in range(7):
       if col_rowspan[j] == 0:	  									#if this happens there could be a need to start a class or time
         temp = (480+(i*5))%60
         if j == 0 and temp == 0:									#in the time column and seeing if on a whole hour
@@ -117,6 +124,7 @@ def createHTML(dict,PR,queryID):
   fw.write("</table></body></html>")		  
   fw.close()
   os.chdir("..")
+  alterIndex(PR,queryID_)
   
 if __name__ == "__main__": 
   createHTML()
