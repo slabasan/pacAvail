@@ -11,7 +11,7 @@ def timeConvert(s):
     endM=s[12:15]
     x=s[6:8]
     y=s[15:17]
-  if x == "am" and y == "pm" and endH != 12:
+  if x == "am" and y == "pm" and endH != "12":
     newEndH=int(float(endH))+12
     resultH=int(float(newEndH))-int(float(startH))
     resultM=int(float(endM))-int(float(startM))
