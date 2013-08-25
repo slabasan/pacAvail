@@ -25,7 +25,7 @@ def timeConvert(s):
   if resultM < 0:
     resultM+=60
     resultH-=1
-    result_hourtomin=resultH*60
+  result_hourtomin=resultH*60
   totaltime=result_hourtomin+resultM
   unitconversion=totaltime/5
   return unitconversion

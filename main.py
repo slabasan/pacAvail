@@ -14,9 +14,9 @@ with open('cleanedClasses.txt','rb') as csv_file:
 csv_file.close()
 newProfs=list(set(my_profs))
 newRooms=list(set(my_rooms))
-for prof in newProfs:
-	mkDict.createDict(1,"prof")
-#print newRooms
+
+for profs in newProfs:
+	tup=mkDict.createDict(1,"profs")
 #print len(newProfs)
 #print len(newRooms)
 
