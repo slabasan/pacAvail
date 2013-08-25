@@ -1,0 +1,18 @@
+th{background-color:#F4EFDD;
+             color:#CF7600;
+             border-spacing: 2px;
+	     word-wrap:break-word;*/}
+
+.emphasis{background-color:#F4EFDD;
+             color:#CF7600;
+             border-spacing: 2px;}
+
+.ghost{background-color:#FFFFFF;
+       border-spacing: 2px;}
+
+table td{line-height:6px;}
+
+/*
+table{border-collapse:collapse; table-layout:fixed; width:800px;}
+table td{border:solid 1px #fab; width:310px; word-wrap:break-word; height:50px;}
+*/
