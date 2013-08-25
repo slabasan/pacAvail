@@ -1,12 +1,40 @@
-# . any char
-# \w word char
-# \d digit
-# \s whitespace
-# \S nonWhitespace
-# + 1 or more
-# * 0 or more
-# re.findall(r'\d\d\d', string)
+#this file is used to generate the HTML/PHP necessary to complete the task
 
+indexFileCode="<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd\">"+"\n"
+indexFileCode+="<html>"+"\n"+"<head><link rel=\"stylesheet\" type=\"text/css\" href=\"indexstyle.css\"></head>""<body>"+"\n"+"<table>"+"\n"+"<tr>"+"\n"
+
+profFileCode="<th>"+"Professors</th>\n<th>Rooms</th>\n<tr><td>"+"<ul>"
+roomFileCode="<td>"+"<ul>"
+
+
+#creates the index page or Table of Contents with the links to all the other pages created with HTML tables in them
+def createIndexPage():
+  global indexFileCode
+  global profFileCode
+  global roomFileCode
+  f = open("index.html",'w')
+  profFileCode+="\n"+"</ul>"
+  roomFileCode+="\n"+"</ul>"
+  f.write(indexFileCode)  
+  f.write(profFileCode)
+  f.write(roomFileCode)
+  f.write("</tr>"+"\n"+"</table>"+"\n"+"</body>"+"\n"+"</html>")
+  f.close()  
+  
+  
+def alterIndex(PR,queryID):
+  global profFileCode
+  global roomFileCode
+  if PR: 
+    profFileCode+="<li>"
+    profFileCode+="<a href=\""+queryID+".html\">"+queryID+"</a>"
+    profFileCode+="</li>"
+  elif not PR:
+    roomFileCode+="<li>"  
+    roomFileCode+="<a href=\""+queryID+".html\">"+queryID+"</a>"
+    roomFileCode+="</li>"
+  
+  
 def createHTML(): 
 
   #TODO: (1) parse file and save course info for a given ROOM to a dictionary or *other* solution (use cleanedClasses.txt)
@@ -32,7 +60,7 @@ def createHTML():
   fw.write("<html>")
   fw.write("<head> <link rel=\"stylesheet\" href=\"tableStyle.css\"> </head>")
   fw.write("<body>")
-  fw.write("<table>")
+  fw.write("<table width=\"80%\">")
   fw.write("\n")
   fw.write("<tr><th>&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Monday&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Tuesday&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Wednesday&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Thursday&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Friday&nbsp;&nbsp;&nbsp;</th></tr>")
 
