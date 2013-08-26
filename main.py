@@ -24,8 +24,9 @@ newRooms=sorted(list(set(my_rooms)))
 #--- list all HTML files in index file
 #--- move CSS files into htmlfiles dir
 for profs in newProfs:
-	tup=mkDict.createDict(1,profs)
-	creation.createHTML(tup[0],tup[1],tup[2])
+	if profs != "TBA":
+	  tup=mkDict.createDict(1,profs)
+	  creation.createHTML(tup[0],tup[1],tup[2])
 for rooms in newRooms:
   tup=mkDict.createDict(0,rooms)
   creation.createHTML(tup[0],tup[1],tup[2])
