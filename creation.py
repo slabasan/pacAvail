@@ -3,7 +3,7 @@
 import os
 
 indexFileCode="<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd\">"+"\n"
-indexFileCode+="<html>"+"\n"+"<head><link rel=\"stylesheet\" type=\"text/css\" href=\"indexstyle.css\"></head>""<body>"+"<h1>University of the Pacific</h1><br><h2>Semester: Fall 2013</h2><br><h3>About Me</h3><br>"+"\n"+"<table>"+"\n"+"<tr>"+"\n"
+indexFileCode+="<html>"+"\n"+"<head><link rel=\"stylesheet\" type=\"text/css\" href=\"indexstyle.css\"></head>""<body>"+"<h1>University of the Pacific</h1><br><h2>Semester: Fall 2013</h2><br><h3>Click any of the following links to see a five-day schedule of courses for a given classroom or professor on Pacific's campus.<br><br>Feel free to contact Stephanie Labasan at s_labasan{at}u.pacific.edu for questions, comments, or suggestions.</h3><br>"+"\n"+"<table>"+"\n"+"<tr>"+"\n"
 
 profFileCode="<th>"+"Professors</th>\n<th>Rooms</th>\n<tr><td>"+"<ul>"
 roomFileCode="<td>"+"<ul>"
@@ -73,7 +73,7 @@ def createHTML(dict,PR,queryID):
   fw.write("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd\">")
   fw.write("\n")
   fw.write("<html>")
-  fw.write("<head> <link rel=\"stylesheet\" href=\"tableStyle.css\"> </head>")
+  fw.write("<head> <link rel=\"stylesheet\" href=\"tablestyle.css\"> </head>")
   fw.write("<body>")
   fw.write("<table width=\"90%\">")
   fw.write("\n")
