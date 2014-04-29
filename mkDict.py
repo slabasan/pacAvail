@@ -49,7 +49,7 @@ def convertDay(x):
 # {(timefrom8am,dayint): [elapsedtimein5mininc,room,prof,coursename,coursenum,timedur,section,dayofweek]}
 def createDict(PR,queryID):
   dict={}
-  with open('cleanedClasses.txt','rb') as csv_file:
+  with open('cleaned1Classes.txt','rb') as csv_file:
     csv_reader=csv.reader(csv_file, delimiter='\t')
     for row in csv_reader:
       time=timeConvert(row[9])	

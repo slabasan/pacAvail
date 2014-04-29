@@ -1,0 +1,74 @@
+pacAvail
+Created by Jay Brink & Stephanie Labasan
+August 2013
+========================================
+Motivation:
+There were three locations on Pacific's campus that served dual-purpose as a
+classroom and as a 24/7 computer laboratory with engineering software. Near the
+beginning of the semester, an admin manually goes through InsidePacific and
+creates a calendar that identifies when the room is occupied by a class. This
+calendar then is posted outside the room, so that students are aware when they
+can take advantage of the computers and avoid disrupting a class in session.
+However, the beginning of the semester is also a time when the course catalog
+is changing. Our program seeks to accomplish three things: (1) create a script
+to generate calendars faster and with ease, (2) give students the ability to
+access the schedules from anywhere, and (3) go beyond the scope of the
+engineering students and provide calendars for all locations on campus and all
+professors, so students are aware of when rooms are available and where
+professors may be at a particular time. 
+
+Our program takes a large data set and generates five-day calendars for all
+unique rooms on campus and professors. Hopefully, all students will find these
+helpful and easily accesible from anywhere. 
+
+Files in repo: 
+README					Obvious
+archive					Delete folder and contents once confirmed they aren't
+						useful
+cleanedClasses.txt		Removes non-useful information from fallClasses.txt, so
+						we can easily parse file	
+creation.py				Creates index.html page
+fallClasses.txt			Data set copied from InsidePacific
+htmlfiles				Directory of all calendars and CSS files, all of which
+						needs to be uploaded to webfolders
+indexstyle.css			Style formats for index page
+main.py					Main program
+mkDict.py				Generates dictionaries for all unique professors and
+						rooms
+moveCSS.py				Moves two CSS files to htmlfiles
+retrieve.py				Outputs cleanedClasses.txt with only lines of interest	
+tableStyle.css			Style formats for calendars
+
+Instructions:
+1) Log into InsidePacific and copy all columns for the semester of interest
+into a file called fallClasses.txt.
+2) Enter ./main.pyc, which will (a) create cleanedClasses.txt from fallClasses.txt
+by calling retrieve.pyc, (b) create a sorted list for all unique professors and
+rooms from cleanedClasses.txt, (c) create a dictionary for every unique
+professor and room, (d) generate index.html with links to five-day calendars
+for all unique professors and rooms, and (e) move CSS files into the htmlfiles
+directory.
+
+Detailed File Descriptions:
+retrieve.py		Reads from fallClasses.txt and write only those lines that
+				start with a SR, C, or NR (i.e. remove all column headers,
+				personal information, etc) to a file called cleanedClasses.txt
+mkDict.py 		Does the following: (a) convert the start and end time into
+				number of 12 min increments from 8AM (for calendar purposes), 
+				(b) index the day of the week by a number ranging from 1 to 5,
+				(c) use the previous information as well as information taken
+				from specific columns to create a dictionary indexed by the 
+				[time units and day of the week index] and assigned values of
+				().
+creation.py 	Creates index.html with links to five-day calendars for all
+				professors and rooms for the semester of interest.  
+moveCSS.py 		Moves the index page CSS and calendar page CSS to the htmlfiles
+				directory. 
+
+Future Work:
+- Automatically run program to generate up-to-date calendars once a week
+- Re-design webpage for more visual appeal
+
+Suggestions:
+- Add course and course number to calendar (i.e. ECPE 41: Circuits, ECPE
+  41\nCircuits) Theresa 4/17/14
