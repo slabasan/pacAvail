@@ -89,7 +89,8 @@ Uploading to webdocs.pacific.edu:
 1) Copy pacific.gif into htmlfiles/
 2) Change the end of line 2 in index.html to be the current semester
 3) Upload the entire htmlfiles/ directory via SCP
-4) Change file permissions for all files to 755.
+4) Change file permissions for all files to 755
+5) Commit to git repo
 
 Future Work:
 - Automatically run program to generate up-to-date calendars once a week
