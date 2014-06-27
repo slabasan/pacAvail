@@ -1,8 +1,8 @@
 #this function gets rid of all the lines that are column headings and my ID at the top of the orignal .txt file RUN FIRST
 #outputs cleanedClasses.txt
-def newFile(): 
-  f = open('springClasses.txt','r')
-  fw = open('cleaned1Classes.txt','w')
+def newFile(rawClassesFile): 
+  f = open(rawClassesFile,'r')
+  fw = open('cleanedClasses.txt','w')
   for lines in f: 
     #print lines[:2]
     #print "\n"
@@ -14,7 +14,7 @@ def newFile():
      
 #this function gets rid of the columns that don't matter to us, leaves only the necessary info we will print writes TO necessaryClasses.txt
 def readToVariables(): 
-  f = open('cleaned1Classes.txt','r')
+  f = open('cleanedClasses.txt','r')
   fw = open('necessaryClasses.txt','w')
   for lines in f: 
     lInfo=lines.split("\t")

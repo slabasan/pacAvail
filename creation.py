@@ -36,7 +36,7 @@ padding-right: 1cm; position: relative; top: -19px; } h3 { text-align: center; \
 font-family: 'Signika Negative'; } #skootup { position: relative; top: -37px; } \
 #unique { position: relative; top: -40px; float: right; width: 10px; } </style> \
 </head> <body> <div id=\"toplevelbody\"> <div id = \"enablemargin\"> <div \
-id=\"header\"> <h1>Spring 2014 Schedule</h1> </div> <div id = \"unique\"> \
+id=\"header\"> <h1>Fall 2014 Schedule</h1> </div> <div id = \"unique\"> \
 <p>&nbsp;</p></div> <img id=\"floated\" src=\"pacific.gif\" \
 width=\"180\" height=\"180\"> </div>            <div id=\"instructions\"> \
 <h3>Click on the room or professor to see their respective 5-day schedule</h3> </div> <div id=\"skootup\">"
@@ -199,7 +199,8 @@ def createHTML(dict,PR,queryID):
             col_rowspan[j]=dict[(i,j)][0]										#update our col_rowspan
             fw.write("\">")
             fw.write("<br><br>")
-            fw.write("<b>" + str(dict[(i,j)][3][:25])+ "</b>" + "<br><br><br>")	#class name limit to 24 characters long
+            fw.write("<b>" + str(dict[(i,j)][3][:24])+ "</b>" + "<br><br><br>")	#class name limit to 24 characters long
+            fw.write(str(dict[(i,j)][4]) + "<br><br><br>")						#class time
             fw.write(str(dict[(i,j)][5]) + "<br><br><br>")						#class time
             fw.write(str(dict[(i,j)][2]) + "<br><br><br>")						#class professor
             fw.write(str(dict[(i,j)][1]) + "<br><br><br>")           			#class room location 
