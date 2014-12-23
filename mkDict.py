@@ -1,5 +1,19 @@
 import csv
 
+def countColumns(f):
+	"""
+	if days column == TBA, remove it from fall14classes.txt.
+	"""
+	f1 = open(f, "r")
+	lines = f1.readlines()
+	f1.close()
+
+	f1 = open(f, "w")
+	for line in lines:
+		if line.split("\t")[8] != "TBA":
+			f1.write(line)
+	f1.close()
+
 #--- convert time to 5 min increment
 def timeConvert(s):
   if "TBA" in s:
@@ -48,6 +62,7 @@ def convertDay(x):
 # {('day(8)','time(9)'): ['course(2,3)','name(7)','prof(19)','room(21)','section(4)']}
 # {(timefrom8am,dayint): [elapsedtimein5mininc,room,prof,coursename,coursenum,timedur,section,dayofweek]}
 def createDict(PR,queryID):
+  countColumns('cleanedClasses.txt')
   dict={}
   with open('cleanedClasses.txt','rb') as csv_file:
     csv_reader=csv.reader(csv_file, delimiter='\t')
@@ -75,6 +90,8 @@ def createDict(PR,queryID):
           newDays=convertDay(days)
           dict[timeConvert("08:00 am-"+str(row[9][0:8])),newDays[0]]=[time,row[21],row[19],row[7],row[2]+" "+row[3],row[9],row[4],row[8]]
           dict[timeConvert("08:00 am-"+str(row[9][0:8])),newDays[1]]=[time,row[21],row[19],row[7],row[2]+" "+row[3],row[9],row[4],row[8]]
+        elif row[8]=="TBA":
+		  "delete row"
         else:
           days=list(row[8])
           newDays=convertDay(days)

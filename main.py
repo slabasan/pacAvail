@@ -50,6 +50,6 @@ def main(rawClassesFile):
 #execute program with "python main.py"
 if __name__=="__main__":
 	if len(sys.argv) != 2:
-		print "Usage: python main.py <Fall14Classes.txt>"
+		print "Usage: python main.py fallClasses.txt\n"
 	else:
 		main(sys.argv[1])

@@ -93,9 +93,6 @@ def createIndexPage():
   f.write("</body>")
   f.write("</html>")
   
-  
-  #f.write("</tr>"+"\n"+"</table>"+"<!-- hitwebcounter Code START -->"+"\n"+"<a href="http://www.hitwebcounter.com" target="_blank">"+"\n"+"<img src="http://hitwebcounter.com/counter/counter.php?page=5058526&style=0032&nbdigits=3&type=page&initCount=0" title="Free and good Web Counter" Alt="Free and good Web Counter"   border="0" >"+"</a><br/>"+"\n"+"<!-- hitwebcounter.com --><a href="http://www.hitwebcounter.com/how-to/how-to-what-is-free-blog-counter.php" title="Free WebCounter" target="_blank" style="font-family: Geneva, Arial, Helvetica; font-size: 14px; color: #85948C; text-decoration: underline ;"><em>Free WebCounter</em>+"\n"+"</a>+"</body>"+"\n"+"</html>")"
-  
   f.close()  
   
   
