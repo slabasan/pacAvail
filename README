@@ -89,12 +89,11 @@ Server Address: tiger.serv.pacific.edu (source:
 oitfaq.pacific.edu/index.php?action=article&id=997&relid=7)
 
 Uploading to webdocs.pacific.edu: 
-1) Copy pacific.gif into htmlfiles/
-2) Change the end of line 2 in index.html to be the current semester
-3) Upload the entire htmlfiles/ directory via SCP. Command to be run from
+1) Change the strings in creation.py to be the current semester
+2) Upload the entire htmlfiles/ directory via SCP. Command to be run from
 ~/labasanProjects/pacAvail/htmlfiles: "scp *
 slabasan@tiger.serv.pacific.edu:~/web-docs/".
-4) Change file permissions for all files to 755
+4) Change file permissions for all files to 444
 5) Commit to git repo
 
 Future Work:
