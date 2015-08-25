@@ -109,3 +109,6 @@ Future Work:
 - 6/26/14 Stephanie: Edit python script to make index.html more readable
 - 6/26/14 Stephanie: Title of index.html (e.g. Spring 2014 Classes) should not
   be hard coded into the script, maybe have it as a command line parameter
+- 8/25/15 Stephanie: Need to write some function to handle rows that are
+  missing columns (i.e., my_profs and my_rooms end up being invalid values).
+  Maybe for professors, check if the string contains "(P)"?

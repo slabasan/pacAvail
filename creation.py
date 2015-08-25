@@ -10,7 +10,7 @@ import os
 indexFileCode="<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"  \
 \"http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd\">"+"\n"
 
-#indexFileCode+="<html>"+"\n"+"<head><link rel=\"stylesheet\" type=\"text/css\" href=\"indexstyle.css\"></head>""<body>"+"<h1>University of the Pacific</h1><br><h2>Semester: Fall 2013</h2><br><h3>Click any of the following links to see a five-day schedule of courses for a given classroom or professor on Pacific's campus.<br><br>Feel free to contact Stephanie Labasan at s_labasan{at}u.pacific.edu for questions, comments, or suggestions.</h3><br>"+"\n"+"<table>"+"\n"+"<tr>"+"\n"
+#indexFileCode+="<html>"+"\n"+"<head><link rel=\"stylesheet\" type=\"text/css\" href=\"indexstyle.css\"></head>""<body>"+"<h1>University of the Pacific</h1><br><h2>Semester: Fall 2015</h2><br><h3>Click any of the following links to see a five-day schedule of courses for a given classroom or professor on Pacific's campus.<br><br>Feel free to contact Stephanie Labasan at s_labasan{at}u.pacific.edu for questions, comments, or suggestions.</h3><br>"+"\n"+"<table>"+"\n"+"<tr>"+"\n"
 
 #NOTE the \ escapes the newline character (ENTER) which allows for a longer string
 indexFileCode+="<html><head><link \
@@ -36,7 +36,7 @@ padding-right: 1cm; position: relative; top: -19px; } h3 { text-align: center; \
 font-family: 'Signika Negative'; } #skootup { position: relative; top: -37px; } \
 #unique { position: relative; top: -40px; float: right; width: 10px; } </style> \
 </head> <body> <div id=\"toplevelbody\"> <div id = \"enablemargin\"> <div \
-id=\"header\"> <h1>Fall 2014 Schedule</h1> </div> <div id = \"unique\"> \
+id=\"header\"> <h1>Fall 2015 Schedule</h1> </div> <div id = \"unique\"> \
 <p>&nbsp;</p></div> <img id=\"floated\" src=\"pacific.gif\" \
 width=\"180\" height=\"180\"> </div>            <div id=\"instructions\"> \
 <h3>Click on the room or professor to see their respective 5-day schedule</h3> </div> <div id=\"skootup\">"
@@ -153,7 +153,6 @@ def createHTML(dict,PR,queryID):
 
   os.chdir("htmlfiles")
   
-																	
   fw = open(queryID_+".html",'w')
   fw.write("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd\">")
   fw.write("\n")
