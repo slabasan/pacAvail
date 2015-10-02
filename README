@@ -62,12 +62,12 @@ Instructions:
 1) Log into InsidePacific and copy all columns for the semester of interest
 into a file called *Classes.txt (i.e. Fall13Classes.txt, Spring14Classes.txt).
 See above for more detailed instructions.
-2) Enter ./main.pyc, which will (a) create cleanedClasses.txt from fallClasses.txt
-by calling retrieve.pyc, (b) create a sorted list for all unique professors and
-rooms from cleanedClasses.txt, (c) create a dictionary for every unique
-professor and room, (d) generate index.html with links to five-day calendars
-for all unique professors and rooms, and (e) move CSS files into the htmlfiles
-directory.
+2) Enter ./main.pyc, which will (a) create cleanedClasses.txt from
+fallClasses.txt by calling retrieve.pyc, (b) create a sorted list for all
+unique professors and rooms from cleanedClasses.txt, (c) create a dictionary
+for every unique professor and room, (d) generate index.html with links to
+five-day calendars for all unique professors and rooms, and (e) move CSS files
+into the htmlfiles directory.
 
 Detailed File Descriptions:
 retrieve.py		Reads from *Classes.txt and write only those lines that
@@ -85,8 +85,10 @@ creation.py 	Creates index.html with links to five-day calendars for all
 moveCSS.py 		Moves the index page CSS and calendar page CSS to the htmlfiles
 				directory. 
 
-Server Address: tiger.serv.pacific.edu (source:
-oitfaq.pacific.edu/index.php?action=article&id=997&relid=7)
+--> COPY web counter code from current version on server.
+
+Server Address: tiger.serv.pacific.edu 
+(source: oitfaq.pacific.edu/index.php?action=article&id=997&relid=7)
 
 Uploading to webdocs.pacific.edu: 
 1) Change the strings in creation.py to be the current semester
